@@ -52,7 +52,7 @@
   }
   
   .section {
-    display: none;
+    display: none; /* Initially hidden */
     margin-top: 50px;
     padding: 20px;
     background-color: #ffffff;
