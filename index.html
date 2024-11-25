@@ -1,111 +1,69 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musa Kaan Altın - Kişisel Web Sitesi</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <title>Musa Kaan Altın - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero-section">
-    <div class="container">
-      <h1>Musa Kaan Altın</h1>
-      <p>Bilgisayar Mühendisi | Full-Stack & Embedded Sistem Geliştirici</p>
-      <a href="#contact" class="cta-button">Bana Ulaş</a>
-    </div>
-  </header>
+  <div class="container">
+    <header>
+      <h1>Merhaba, Ben Musa Kaan Altın</h1>
+      <p>Benimle ilgili daha fazla bilgi edinmek için aşağıdaki butonları kullanın.</p>
+      <div class="buttons">
+        <button onclick="showSection('experience')">Deneyimlerim</button>
+        <button onclick="showSection('projects')">Projelerim</button>
+        <button onclick="showSection('contact')">Bana Ulaşın</button>
+      </div>
+    </header>
 
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">Hakkımda</a></li>
-      <li><a href="#skills">Yetenekler</a></li>
-      <li><a href="#experience">Deneyimler</a></li>
-      <li><a href="#projects">Projeler</a></li>
-      <li><a href="#contact">İletişim</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="section">
-    <div class="container">
-      <h2>Hakkımda</h2>
-      <p>Merhaba! Ben Musa Kaan Altın, Bilgisayar Mühendisliği öğrencisiyim. Full-stack geliştirme, gömülü sistemler, makine öğrenmesi ve iOS geliştirme konularında tecrübelerim bulunuyor. Hem bireysel projelerde hem de takım çalışmalarında başarıyla yer aldım.</p>
-    </div>
-  </section>
-
-  <section id="skills" class="section bg-light">
-    <div class="container">
-      <h2>Yetenekler</h2>
-      <ul>
-        <li><strong>Programlama:</strong> Python, C++, JavaScript, SQL</li>
-        <li><strong>Web Geliştirme:</strong> React, Node.js, HTML/CSS, ASP.NET Core MVC</li>
-        <li><strong>Gömülü Sistemler:</strong> Arduino, STM32, UART</li>
-        <li><strong>Mobil Geliştirme:</strong> Swift (iOS)</li>
-        <li><strong>Araçlar:</strong> Git, Docker, Linux</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="experience" class="section">
-    <div class="container">
+    <!-- Section for Experience -->
+    <section id="experience" class="section" style="display:none;">
       <h2>Deneyimlerim</h2>
-      <div class="experience">
-        <h3>Karel - Embedded Software Engineer Intern</h3>
-        <p>Sensör entegrasyonu ve STM32 işlemcisiyle çevresel veri toplama üzerine çalıştım.</p>
-      </div>
-      <div class="experience">
-        <h3>Crypttech - Machine Learning & AI Intern</h3>
-        <p>Scikit-learn kullanarak karar ağaçları ve k-means clustering üzerine çalıştım.</p>
-      </div>
-      <div class="experience">
-        <h3>Mobiliz - iOS Application Developer Intern</h3>
-        <p>Sıfırdan bir mobil uygulama geliştirdim ve Swift ile iki ek uygulama yaptım.</p>
-      </div>
-      <div class="experience">
-        <h3>STM - Embedded Software Engineer Intern</h3>
-        <p>UART protokolü geliştirdim ve gömülü sistemlerde zamanlama kontrolü sağladım.</p>
-      </div>
-      <div class="experience">
-        <h3>Ziraat Teknoloji - Full-Stack Developer Intern</h3>
-        <p>React, JavaScript ve PostgreSQL kullanarak banka uygulamaları geliştirdim.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="projects" class="section bg-light">
-    <div class="container">
-      <h2>Projeler</h2>
-      <div class="project">
-        <h3>Instagram Clone (Swift)</h3>
-        <p>Fotoğraf paylaşımı ve konum tabanlı haritalama özelliklerine sahip bir mobil uygulama.</p>
-      </div>
-      <div class="project">
-        <h3>Chat App (Python)</h3>
-        <p>Çok kullanıcılı, gerçek zamanlı sohbet uygulaması.</p>
-      </div>
-      <div class="project">
-        <h3>Banking App (React)</h3>
-        <p>İşlem yönetimi ve veri analizi özelliklerine sahip bir banka uygulaması.</p>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>İletişim</h2>
-      <p>Bana ulaşmak için aşağıdaki bağlantılara tıklayın:</p>
+      <h3>Karel, Ankara, Turkey - Embedded Software Engineer Intern (Jun 2022 - Aug 2022)</h3>
       <ul>
-        <li><a href="mailto:mkaanaltin@gmail.com">E-posta: mkaanaltin@gmail.com</a></li>
-        <li><a href="https://www.linkedin.com/in/mkaana" target="_blank">LinkedIn: mkaana</a></li>
-        <li><a href="https://github.com/MKaaNa" target="_blank">GitHub: MKaaNa</a></li>
-        <li><strong>Telefon:</strong> +90 541 826 3290</li>
+        <li>Worked with STM32CUBEIDE processor kit to integrate various sensors and output environmental variables like air quality, temperature, and humidity.</li>
+        <li>Integrated air quality, temperature, and humidity sensors to collect real-time data for monitoring environmental conditions.</li>
       </ul>
-    </div>
-  </section>
+      <h3>Crypttech, Istanbul, Turkey - Machine Learning & AI Intern (Jan 2023 - Feb 2023)</h3>
+      <ul>
+        <li>Worked on machine learning models like decision trees and k-means clustering using Scikit-learn for various projects.</li>
+      </ul>
+      <h3>Mobiliz, Ankara, Turkey - iOS Application Developer Intern (Jun 2023 - Jul 2023)</h3>
+      <ul>
+        <li>Developed mobile applications using Swift and Xcode, creating apps from scratch and improving existing applications.</li>
+      </ul>
+      <h3>STM, Ankara, Turkey - Embedded Software Engineer Intern (Jan 2024 - Feb 2024)</h3>
+      <ul>
+        <li>Programmed with the Tiva TM4C1294XL development kit, optimizing performance for embedded systems and configuring digital inputs, LEDs, and UART-based communication protocols.</li>
+      </ul>
+      <h3>Ziraat Teknoloji, Ankara, Turkey - Full-Stack Developer Intern (Jul 2024 - Aug 2024)</h3>
+      <ul>
+        <li>Developed a banking application using React, Express.js, and PostgreSQL, ensuring seamless data flow and timely transaction management.</li>
+      </ul>
+    </section>
 
-  <footer>
-    <p>&copy; 2024 Musa Kaan Altın. Tüm Hakları Saklıdır.</p>
-  </footer>
+    <!-- Section for Projects -->
+    <section id="projects" class="section" style="display:none;">
+      <h2>Projelerim</h2>
+      <h3>Instagram Clone (Mobile App Development - 2023)</h3>
+      <p>Developed an app for photo sharing and location-based mapping using Swift and Xcode. It simulates Instagram's basic features for a user-friendly experience.</p>
+      <h3>Chat App (Backend Development - 2024)</h3>
+      <p>Developed a multi-user real-time chat application using Python and Socket programming. Implemented server-client communication and message exchange functionality.</p>
+      <h3>Banking App (Full-Stack Development - 2024)</h3>
+      <p>Developed a banking app using React, JavaScript, and Express.js for transaction management, data analysis, and user authentication features.</p>
+    </section>
+
+    <!-- Section for Contact -->
+    <section id="contact" class="section" style="display:none;">
+      <h2>Bana Ulaşın</h2>
+      <p>E-posta: <a href="mailto:mkaanaltin@gmail.com">mkaanaltin@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/mkaana">mkaana</a></p>
+      <p>GitHub: <a href="https://github.com/MKaaNa">MKaaNa</a></p>
+    </section>
+  </div>
+
+  <script src="scripts.js"></script>
 </body>
 </html>

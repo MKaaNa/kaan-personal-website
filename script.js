@@ -1,15 +1,12 @@
-// Scroll Animasyonları
-document.addEventListener('scroll', () => {
-    const sections = document.querySelectorAll('section');
-    const scrollPosition = window.scrollY + window.innerHeight;
-
+function showSection(sectionId) {
+    // Öncelikle tüm bölümleri gizleyelim
+    const sections = document.querySelectorAll('.section');
     sections.forEach(section => {
-        if (scrollPosition > section.offsetTop + 50) {
-            section.style.opacity = 1;
-            section.style.transform = 'translateY(0)';
-        } else {
-            section.style.opacity = 0;
-            section.style.transform = 'translateY(50px)';
-        }
+      section.style.display = 'none';
     });
-});
+  
+    // Tıklanan bölümü gösterelim
+    const section = document.getElementById(sectionId);
+    section.style.display = 'block';
+  }
+  
