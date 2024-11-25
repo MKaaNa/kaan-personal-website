@@ -1,108 +1,83 @@
-* {
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-  
-  .container {
-    text-align: center;
-    width: 80%;
-    max-width: 900px;
-  }
-  
-  header h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-    animation: fadeIn 1.5s ease-in-out;
-  }
-  
-  header p {
-    font-size: 1.2em;
-    margin-bottom: 30px;
-    animation: fadeIn 1.5s ease-in-out 0.5s;
-  }
-  
-  .buttons {
-    margin-top: 30px;
-  }
-  
-  .button {
+}
+
+header {
     background-color: #007BFF;
     color: white;
-    padding: 15px 30px;
-    font-size: 1.2em;
+    text-align: center;
+    padding: 50px 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 36px;
+}
+
+p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.button-container {
+    margin-top: 20px;
+}
+
+button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
     border: none;
-    border-radius: 5px;
+    margin: 5px;
     cursor: pointer;
-    margin: 10px;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-  }
-  
-  .button:hover {
-    background-color: #0056b3;
-    transform: scale(1.1);
-  }
-  
-  .section {
-    display: none;
-    margin-top: 50px;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+section {
+    margin: 20px;
     padding: 20px;
     background-color: #ffffff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    opacity: 0;
-    animation: fadeInSection 1.5s ease-in-out;
-  }
-  
-  @keyframes fadeIn {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  @keyframes fadeInSection {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  section h2 {
-    font-size: 2.5em;
-    margin-bottom: 20px;
-  }
-  
-  section h3 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  section p {
-    font-size: 1.2em;
-    line-height: 1.5;
-  }
-  
-  section ul {
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none; /* Hide sections by default */
+}
+
+section h2 {
+    font-size: 24px;
+    color: #007BFF;
+}
+
+section ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  section ul li {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-  }
-  
+}
+
+section ul li {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+footer {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}

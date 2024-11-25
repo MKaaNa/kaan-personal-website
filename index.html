@@ -1,69 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Musa Kaan Altın - Personal Website</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Musa Kaan Altın - Personal Website</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
     <header>
-      <h1>Merhaba, Ben Musa Kaan Altın</h1>
-      <p>Bilgilerim, projelerim ve deneyimlerim hakkında daha fazla bilgi edinmek için aşağıdaki butonları kullanabilirsiniz.</p>
-      <div class="buttons">
-        <button class="button" onclick="showSection('experience')">Deneyimlerim</button>
-        <button class="button" onclick="showSection('projects')">Projelerim</button>
-        <button class="button" onclick="showSection('contact')">Bana Ulaşın</button>
-      </div>
+        <h1>Musa Kaan Altın</h1>
+        <p>Computer Engineering Student | Intern | Developer</p>
+        <div class="button-container">
+            <button onclick="toggleSection('experience')">Deneyimlerim</button>
+            <button onclick="toggleSection('projects')">Projelerim</button>
+            <button onclick="toggleSection('contact')">Bana Ulaşın</button>
+        </div>
     </header>
 
-    <!-- Section for Experience -->
-    <section id="experience" class="section">
-      <h2>Deneyimlerim</h2>
-      <h3>Karel, Ankara, Turkey - Embedded Software Engineer Intern (Jun 2022 - Aug 2022)</h3>
-      <ul>
-        <li>Worked with STM32CUBEIDE processor kit to integrate various sensors and output environmental variables like air quality, temperature, and humidity.</li>
-        <li>Integrated air quality, temperature, and humidity sensors to collect real-time data for monitoring environmental conditions.</li>
-      </ul>
-      <h3>Crypttech, Istanbul, Turkey - Machine Learning & AI Intern (Jan 2023 - Feb 2023)</h3>
-      <ul>
-        <li>Worked on machine learning models like decision trees and k-means clustering using Scikit-learn for various projects.</li>
-      </ul>
-      <h3>Mobiliz, Ankara, Turkey - iOS Application Developer Intern (Jun 2023 - Jul 2023)</h3>
-      <ul>
-        <li>Developed mobile applications using Swift and Xcode, creating apps from scratch and improving existing applications.</li>
-      </ul>
-      <h3>STM, Ankara, Turkey - Embedded Software Engineer Intern (Jan 2024 - Feb 2024)</h3>
-      <ul>
-        <li>Programmed with the Tiva TM4C1294XL development kit, optimizing performance for embedded systems and configuring digital inputs, LEDs, and UART-based communication protocols.</li>
-      </ul>
-      <h3>Ziraat Teknoloji, Ankara, Turkey - Full-Stack Developer Intern (Jul 2024 - Aug 2024)</h3>
-      <ul>
-        <li>Developed a banking application using React, Express.js, and PostgreSQL, ensuring seamless data flow and timely transaction management.</li>
-      </ul>
+    <section id="experience" class="hidden">
+        <h2>Deneyimlerim</h2>
+        <ul>
+            <li><strong>Karel</strong> - Embedded Software Engineer Intern (Jun 2022 - Aug 2022)</li>
+            <li><strong>Crypttech</strong> - Machine Learning & AI Intern (Jan 2023 - Feb 2023)</li>
+            <li><strong>Mobiliz</strong> - iOS Application Developer Intern (Jun 2023 - Jul 2023)</li>
+            <li><strong>STM</strong> - Embedded Software Engineer Intern (Jan 2024 - Feb 2024)</li>
+            <li><strong>Ziraat Teknoloji</strong> - Full-Stack Developer Intern (Jul 2024 - Aug 2024)</li>
+        </ul>
     </section>
 
-    <!-- Section for Projects -->
-    <section id="projects" class="section">
-      <h2>Projelerim</h2>
-      <h3>Instagram Clone (Mobile App Development - 2023)</h3>
-      <p>Developed an app for photo sharing and location-based mapping using Swift and Xcode. It simulates Instagram's basic features for a user-friendly experience.</p>
-      <h3>Chat App (Backend Development - 2024)</h3>
-      <p>Developed a multi-user real-time chat application using Python and Socket programming. Implemented server-client communication and message exchange functionality.</p>
-      <h3>Banking App (Full-Stack Development - 2024)</h3>
-      <p>Developed a banking app using React, JavaScript, and Express.js for transaction management, data analysis, and user authentication features.</p>
+    <section id="projects" class="hidden">
+        <h2>Projelerim</h2>
+        <ul>
+            <li><strong>Instagram Clone (Swift)</strong> - Mobile App Development</li>
+            <li><strong>Chat App (Python)</strong> - Backend Development with Socket Programming</li>
+            <li><strong>Banking App (React)</strong> - Full-Stack Development</li>
+        </ul>
     </section>
 
-    <!-- Section for Contact -->
-    <section id="contact" class="section">
-      <h2>Bana Ulaşın</h2>
-      <p>E-posta: <a href="mailto:mkaanaltin@gmail.com">mkaanaltin@gmail.com</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/mkaana">mkaana</a></p>
-      <p>GitHub: <a href="https://github.com/MKaaNa">MKaaNa</a></p>
+    <section id="contact" class="hidden">
+        <h2>Bana Ulaşın</h2>
+        <p>Email: <a href="mailto:mkaanaltin@gmail.com">mkaanaltin@gmail.com</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/mkaana" target="_blank">mkaana</a></p>
+        <p>GitHub: <a href="https://github.com/MKaaNa" target="_blank">MkaaNa</a></p>
     </section>
-  </div>
 
-  <script src="scripts.js"></script>
+    <footer>
+        <p>&copy; 2024 Musa Kaan Altın. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
