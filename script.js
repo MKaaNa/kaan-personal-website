@@ -1,12 +1,11 @@
-// script.js
 function toggleSection(sectionId) {
-    // Hide all sections
+    // Tüm bölümleri gizle
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
-        section.style.display = 'none';
+        section.classList.add('hidden');
     });
 
-    // Show the clicked section
+    // İlgili bölümü göster
     const section = document.getElementById(sectionId);
-    section.style.display = 'block';
+    section.classList.remove('hidden');
 }
